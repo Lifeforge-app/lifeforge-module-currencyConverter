@@ -1,4 +1,4 @@
-import { CurrencyInput, DashboardItem, ModuleHeader } from 'lifeforge-ui'
+import { CurrencyInput, ModuleHeader, Widget } from 'lifeforge-ui'
 import { useEffect, useState } from 'react'
 
 import ConversionRatesHistoryGraph from './components/ConversionRatesHistoryGraph'
@@ -90,8 +90,8 @@ function CurrencyConverter() {
         label="Amount"
         namespace="apps.currencyConverter"
         placeholder="0.00"
-        setValue={setAmount}
         value={amount}
+        onChange={setAmount}
       />
       <CurrencySelector
         currencies={currencies}
@@ -101,7 +101,7 @@ function CurrencyConverter() {
         setToCurrency={setToCurrency}
         toCurrency={toCurrency}
       />
-      <DashboardItem
+      <Widget
         className="h-min"
         icon="tabler:currency-dollar"
         namespace="apps.currencyConverter"
@@ -117,15 +117,15 @@ function CurrencyConverter() {
           result={result}
           toCurrency={toCurrency}
         />
-      </DashboardItem>
-      <DashboardItem
+      </Widget>
+      <Widget
         className="my-6"
         icon="tabler:graph"
         namespace="apps.currencyConverter"
         title="Conversion Rates History"
       >
         <ConversionRatesHistoryGraph />
-      </DashboardItem>
+      </Widget>
     </>
   )
 }

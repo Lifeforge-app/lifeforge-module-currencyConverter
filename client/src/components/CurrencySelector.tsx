@@ -34,9 +34,9 @@ function CurrencySelector({
           icon="tabler:arrow-up"
           label="From"
           namespace="apps.currencyConverter"
-          setQuery={setQueries.from}
-          setValue={setFromCurrency}
           value={fromCurrency}
+          onChange={setFromCurrency}
+          onQueryChanged={setQueries.from}
         >
           {filteredCurrencies.from.map(currency => (
             <ComboboxOption
@@ -64,9 +64,9 @@ function CurrencySelector({
           icon="tabler:arrow-down"
           label="To"
           namespace="apps.currencyConverter"
-          setQuery={setQueries.to}
-          setValue={setToCurrency}
           value={toCurrency}
+          onChange={setToCurrency}
+          onQueryChanged={setQueries.to}
         >
           {filteredCurrencies.to.map(currency => (
             <ComboboxOption

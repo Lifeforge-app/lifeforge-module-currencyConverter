@@ -157,7 +157,7 @@ export default function ConversionRatesHistoryGraph() {
           icon="tabler:arrow-up"
           label="From"
           namespace="apps.currencyConverter"
-          setValue={setFromCurrency}
+          onChange={setFromCurrency}
           value={fromCurrency}
         >
           {supportedCurrencies.map(code => (
@@ -198,7 +198,7 @@ export default function ConversionRatesHistoryGraph() {
           icon="tabler:arrow-down"
           label="To"
           namespace="apps.currencyConverter"
-          setValue={setToCurrency}
+          onChange={setToCurrency}
           value={toCurrency}
         >
           {supportedCurrencies.map(code => (
