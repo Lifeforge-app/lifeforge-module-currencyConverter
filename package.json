@@ -1,6 +1,12 @@
 {
-  "name": "currency-converter",
-  "version": "dev. 25w41",
+  "name": "@lifeforge/lifeforge--currency-converter",
+  "displayName": "Currency Converter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifeforge-app/lifeforge-module-currencyConverter.git"
+  },
+  "version": "0.0.1",
+  "author": "Melvin Chia <melvinchia623600@gmail.com>",
   "description": "Convert between currencies with real-time exchange rates.",
   "scripts": {
     "types": "cd client && bun tsc"
@@ -20,5 +26,15 @@
   "devDependencies": {
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3"
+  },
+  "exports": {
+    "./manifest": {
+      "types": "./manifest.d.ts",
+      "default": "./manifest.ts"
+    }
+  },
+  "lifeforge": {
+    "icon": "tabler:currency-dollar",
+    "category": "Utilities"
   }
 }
