@@ -5,6 +5,7 @@ import ConversionRatesHistoryGraph from './components/ConversionRatesHistoryGrap
 import ConversionResult from './components/ConversionResult'
 import CurrencySelector from './components/CurrencySelector'
 import { useCurrencies } from './hooks/useCurrencies'
+import './index.css'
 import type { ExchangeRates } from './interfaces/currency_converter_interfaces'
 
 function CurrencyConverter() {
