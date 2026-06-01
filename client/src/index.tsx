@@ -1,5 +1,6 @@
-import { CurrencyInput, ModuleHeader, Widget } from 'lifeforge-ui'
 import { useEffect, useState } from 'react'
+
+import { CurrencyInput, ModuleHeader, Widget } from '@lifeforge/ui'
 
 import ConversionRatesHistoryGraph from './components/ConversionRatesHistoryGraph'
 import ConversionResult from './components/ConversionResult'

@@ -1,4 +1,4 @@
-import { Button, ComboboxInput, ComboboxOption } from 'lifeforge-ui'
+import { Button, ComboboxInput, ComboboxOption } from '@lifeforge/ui'
 
 import { useCurrencies } from '../hooks/useCurrencies'
 import type { Currency } from '../interfaces/currency_converter_interfaces'

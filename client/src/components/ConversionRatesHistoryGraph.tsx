@@ -9,10 +9,10 @@ import {
   Title,
   Tooltip
 } from 'chart.js'
-import { Button, ListboxInput, ListboxOption } from 'lifeforge-ui'
+import { Button, ListboxInput, ListboxOption } from '@lifeforge/ui'
 import { useEffect, useMemo, useState } from 'react'
 import { Line } from 'react-chartjs-2'
-import { usePersonalization } from 'shared'
+import { usePersonalization } from '@lifeforge/shared'
 
 import { CURRENCIES } from '../constants/currencies'
 
