@@ -1,4 +1,3 @@
-import { Icon , Button, ListboxInput, ListboxOption , usePersonalization } from '@lifeforge/ui'
 import {
   CategoryScale,
   Chart as ChartJS,
@@ -12,6 +11,13 @@ import {
 import { useEffect, useMemo, useState } from 'react'
 import { Line } from 'react-chartjs-2'
 
+import {
+  Button,
+  Icon,
+  ListboxInput,
+  ListboxOption,
+  usePersonalization
+} from '@lifeforge/ui'
 
 import { CURRENCIES } from '../constants/currencies'
 
