@@ -1,7 +1,6 @@
-import { Icon } from '@iconify/react'
+import { Icon , ErrorScreen, LoadingScreen } from '@lifeforge/ui'
 import { useTranslation } from 'react-i18next'
 
-import { ErrorScreen, LoadingScreen } from '@lifeforge/ui'
 
 import { useCurrencies } from '../hooks/useCurrencies'
 import type { ExchangeRates } from '../interfaces/currency_converter_interfaces'

@@ -1,4 +1,4 @@
-import { Icon } from '@iconify/react'
+import { Icon , Button, ListboxInput, ListboxOption , usePersonalization } from '@lifeforge/ui'
 import {
   CategoryScale,
   Chart as ChartJS,
@@ -9,10 +9,9 @@ import {
   Title,
   Tooltip
 } from 'chart.js'
-import { Button, ListboxInput, ListboxOption } from '@lifeforge/ui'
 import { useEffect, useMemo, useState } from 'react'
 import { Line } from 'react-chartjs-2'
-import { usePersonalization } from '@lifeforge/shared'
+
 
 import { CURRENCIES } from '../constants/currencies'
 
@@ -157,8 +156,8 @@ export default function ConversionRatesHistoryGraph() {
           icon="tabler:arrow-up"
           label="From"
           namespace="apps.currencyConverter"
-          onChange={setFromCurrency}
           value={fromCurrency}
+          onChange={setFromCurrency}
         >
           {supportedCurrencies.map(code => (
             <ListboxOption
@@ -198,8 +197,8 @@ export default function ConversionRatesHistoryGraph() {
           icon="tabler:arrow-down"
           label="To"
           namespace="apps.currencyConverter"
-          onChange={setToCurrency}
           value={toCurrency}
+          onChange={setToCurrency}
         >
           {supportedCurrencies.map(code => (
             <ListboxOption
