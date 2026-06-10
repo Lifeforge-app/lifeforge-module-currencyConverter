@@ -10,21 +10,13 @@ import type { ExchangeRates } from './interfaces/currency_converter_interfaces'
 
 function CurrencyConverter() {
   const [amount, setAmount] = useState<number>(1)
-
   const [fromCurrency, setFromCurrency] = useState<string>('MYR')
-
   const [toCurrency, setToCurrency] = useState<string>('SGD')
-
   const [result, setResult] = useState<number | null>(null)
-
   const [ratesData, setRatesData] = useState<ExchangeRates | null>(null)
-
   const [isLoading, setIsLoading] = useState<boolean>(true)
-
   const [error, setError] = useState<Error | null>(null)
-
   const [lastUpdated, setLastUpdated] = useState<string | null>(null)
-
   const { currencies } = useCurrencies()
 
   useEffect(() => {

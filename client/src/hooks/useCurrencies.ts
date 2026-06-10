@@ -5,7 +5,6 @@ import type { Currency } from '../interfaces/currency_converter_interfaces'
 
 export function useCurrencies() {
   const [fromQuery, setFromQuery] = useState<string>('')
-
   const [toQuery, setToQuery] = useState<string>('')
 
   const currencies = useMemo<Currency[]>(() => {
