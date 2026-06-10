@@ -1,5 +1,4 @@
 import { useModuleTranslation } from '@lifeforge/localization'
-
 import { ErrorScreen, Icon, LoadingScreen } from '@lifeforge/ui'
 
 import { useCurrencies } from '../hooks/useCurrencies'

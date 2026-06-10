@@ -33,7 +33,6 @@ function CurrencySelector({
           }}
           icon="tabler:arrow-up"
           label="From"
-          namespace="apps.currencyConverter"
           value={fromCurrency}
           onChange={setFromCurrency}
           onQueryChanged={setQueries.from}
@@ -63,7 +62,6 @@ function CurrencySelector({
           }}
           icon="tabler:arrow-down"
           label="To"
-          namespace="apps.currencyConverter"
           value={toCurrency}
           onChange={setToCurrency}
           onQueryChanged={setQueries.to}

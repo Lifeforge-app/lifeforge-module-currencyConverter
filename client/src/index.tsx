@@ -81,7 +81,6 @@ function CurrencyConverter() {
         className="mb-6"
         icon="tabler:cash"
         label="Amount"
-        namespace="apps.currencyConverter"
         placeholder="0.00"
         value={amount}
         onChange={setAmount}
@@ -97,7 +96,6 @@ function CurrencyConverter() {
       <Widget
         className="h-min"
         icon="tabler:currency-dollar"
-        namespace="apps.currencyConverter"
         title="Conversion Result"
       >
         <ConversionResult
@@ -114,7 +112,6 @@ function CurrencyConverter() {
       <Widget
         className="my-6"
         icon="tabler:graph"
-        namespace="apps.currencyConverter"
         title="Conversion Rates History"
       >
         <ConversionRatesHistoryGraph />
