@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next'
+import { useModuleTranslation } from '@lifeforge/localization'
 
 import { ErrorScreen, Icon, LoadingScreen } from '@lifeforge/ui'
 
@@ -26,7 +26,7 @@ function ConversionResult({
   error,
   lastUpdated
 }: ConversionResultProps) {
-  const { t } = useTranslation('apps.currencyConverter')
+  const { t } = useModuleTranslation()
 
   const { currencies } = useCurrencies()
 
